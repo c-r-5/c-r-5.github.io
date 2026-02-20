@@ -1,6 +1,5 @@
 # Portfolio (WIP)
 
-WIP。  
-まだ Vuetify 3 のサンプルそのまま。
+WIP。
 
 URL: https://c-r-5.github.io/portfolio/
