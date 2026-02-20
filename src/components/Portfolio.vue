@@ -54,7 +54,6 @@
           md="6"
         >
           <v-card
-            class="h-100"
             :href="project.link"
             rounded="lg"
             target="_blank"
@@ -66,14 +65,19 @@
                   <v-icon>{{ project.icon }}</v-icon>
                 </v-avatar>
               </template>
-              <v-card-title>{{ project.title }}</v-card-title>
+              <v-card-title
+                class="text-wrap"
+                style="overflow-wrap: break-word; word-break: break-word; white-space: normal"
+              >
+                {{ project.title }}
+              </v-card-title>
               <v-card-subtitle>{{ project.subtitle }}</v-card-subtitle>
             </v-card-item>
             <v-card-text>
-              <p class="mb-3" style="white-space: pre-line">
+              <p class="mb-3" style="white-space: pre-line; word-break: break-word">
                 {{ project.description }}
               </p>
-              <v-chip-group>
+              <div class="d-flex flex-wrap ga-2">
                 <v-chip
                   v-for="tech in project.technologies"
                   :key="tech"
@@ -82,7 +86,7 @@
                 >
                   {{ tech }}
                 </v-chip>
-              </v-chip-group>
+              </div>
             </v-card-text>
             <v-card-actions>
               <v-spacer />
