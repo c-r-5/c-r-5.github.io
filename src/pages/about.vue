@@ -19,7 +19,7 @@
             </div>
 
             <div class="mb-2 font-weight-medium">主な担当</div>
-            <ul style="margin-top:0; margin-bottom:12px; padding-left:20px">
+            <ul class="mt-0 mb-3 pl-5">
               <li>UdonSharp によるゲームロジック開発</li>
               <li>ワールド内 UI / UX 設計</li>
               <li>パフォーマンス最適化とデバッグ</li>
