@@ -22,7 +22,7 @@ export default defineConfig({
         404: 'index.html'
       }
     }
-  }
+  },
   plugins: [
     VueRouter(),
     Layouts(),
